@@ -1,0 +1,364 @@
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    /*background: white;  optional */
+}
+
+nav ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;       
+    gap: 15px;        
+    align-items: center;  
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: black; /* default text color */
+}
+
+/* "Get In Touch" button */
+#touch {
+    margin-left: 500px;       /* pushes it to the far right */
+    border-radius: 33px;
+    background-color:black;
+    height: 89px;
+    width: 125px;
+    text-align: center;
+    color: white;
+   /* line-height: 30px;        vertically center text */
+}
+.abh2{
+    margin-top: 0px;
+}
+
+.available{
+    background-color: rgba(150, 146, 103, 0.46);
+    border-radius: 33px;
+    width: 140px;
+    height: 22px;
+    text-align: center;
+    
+    
+}
+body{
+    padding-left: 0px;
+}
+.part1{
+    display: grid;
+}
+.container {
+    display: flex;
+    /*justify-content: space-between;  pushes one div left, one right */
+    margin-top: 20px;
+    gap: 35px;
+    margin-left: 140px;
+    
+}
+.container4{
+    display: flex;
+    /*justify-content: space-between;  pushes one div left, one right */
+    margin-top: 20px;
+    gap: 35px;
+    margin-left: 0px;
+    
+}
+.container3 {
+    display: flex;
+    /*justify-content: space-between;  pushes one div left, one right */
+    gap: 35px;
+    margin-left: 50px;
+    
+}
+#set{
+    font-size: 60px;
+}
+.part2 img{
+       
+       width: 500px;
+       height: 600px;
+       padding-left: 30px;
+       
+
+}
+.part1{
+       
+       width:500px;
+       height: 85%;
+       padding-left: 140px;
+}
+
+.btn1{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 25px;
+    width: 105px;
+    text-align: center;
+    padding-top: 5px;
+}
+.btn2{
+    background-color:white;
+    color: black;
+    border-radius:10px;
+    border: solid black;   /* border style + color */
+    border-width: 1px;     /* thickness (increase size here) */
+    padding: 10px;         /* space inside */
+    height: 15px;
+    width: 95px;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding: 8px 15px;
+}
+
+.icon img{
+    height: 20px;
+    width: 20px;
+    padding: 1px;
+    border-radius: 2px;
+    border: 1px solid black;   /* width | style | color */
+    background-color: black;
+}
+.inner{
+    display:flex;
+    margin-left: 80px;
+}
+#about{
+    background-color: rgba(145, 115, 115, 0.15);
+}
+.abh1{
+    padding-top: 0px;
+    text-align: center;
+    width: 50px;
+    margin-left: 600px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+.alignit{
+    margin-left: 140px;
+}
+.aligni{
+     margin-left:100px;
+}
+.alig{
+     margin-left:55px;
+}
+.containera{
+    display: flex;
+    /*justify-content: space-between;*/
+    gap: 10px;
+    margin-left:10px ;
+    height:700px;
+}
+.containeraa{
+    display: flex;
+    /*justify-content: space-between;*/
+    gap: 1px;
+    padding-left: 20px;
+    margin-left:100px ;
+    height:70px;
+    margin-right: 10px;
+
+}
+.conta{
+    display: flex;
+    /*justify-content: space-between;*/
+    gap: 4px;
+    padding-left: 20px;
+    margin-left:100px ;
+    height:70px;
+    margin-right: 10px;
+
+}
+.btna{
+    background-color: rgba(159, 142, 116, 0.29);
+    border-radius: 12px;
+    width: 130px;
+    height: 25px;
+    text-align: center;
+    padding-top: 5px;
+}
+.offer {
+    background-color: white;
+    text-align: center;
+    width: 120px;
+    height: 100px;
+    border-radius: 5px;
+    padding-top:25px;
+}
+.skllsh{
+    margin-left: 140px;
+    color: black;
+
+}
+.tech{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid black;
+    margin-left: 40px;
+}
+.tech1{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid black;
+    margin-left: 220px;
+}
+.tec{
+    background-color: rgba(177, 147, 147, 0.15);
+    border-radius: 3px;
+    /*border: 3px solid red;    thickness, style, color */
+    margin: 4px;
+    text-align: center;
+    padding-top: 6px;
+}
+.tech h6 {
+    text-align: center;
+}
+.icon1 img{
+    height: 40px;
+    width: 40px;
+    padding: 1px;
+    border-width: 1px;
+    background-color: black;
+    border-radius: 2px;
+
+    
+}
+.icon1 p{
+padding: 18px;
+    
+}
+.container1{
+    display: block;
+    margin-left:px;
+    padding-left: 0px;
+}
+.icone p{
+    margin-top: 5px;
+    padding-left: 15px;
+}
+.left{
+    height: 350px;
+    width: 380px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding-left: 20px;
+}
+.left h3{
+    text-align: center;
+}
+.leftl{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 365px;
+    background-color: rgba(177, 147, 147, 0.15);
+    border-radius: 8px;
+}
+#send{
+    background-color: black;
+    color: white;
+    width: 370px;
+    height: 40px;
+    margin-top: 0px;
+    border-radius: 8px;
+}
+.services{
+     box-shadow: -43px 14px 26px -6px rgba(0,0,0,0.48);
+    -webkit-box-shadow: -1px 14px 26px -6px rgba(0,0,0,0.48);
+    -moz-box-shadow: -1px 14px 26px -6px rgba(0,0,0,0.48);
+    margin-right: 30px;
+    background-color: rgba(159, 142, 116, 0.29);
+    padding: 40px 30px 50px 30px;
+    border: 1px solid rgb(150, 140,60);
+    border-radius: 51px;
+    margin-top: 15px;
+}
+.services-panel{
+    display: grid;
+    margin: -80px 2px 0px 140px;
+    /* background-color: yellowgreen; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-top: 80px; 
+} 
+footer{
+    border-top: 1px solid black;
+    color:black;
+}
+footer h3{
+    padding-right: 800px;
+    color:black;
+}
+    .logo{
+    width: 8%;
+    height: 6%;
+    border-radius: 52px;
+}
+.div-footer {
+    display: flex;
+    text-align: left;
+    
+    gap: 10px;
+}
+.div-footer div img{
+          height: 30px;
+          width: 30px;
+          margin-top: 10px;
+}
+#last{
+    text-align: center;
+    border-top: 1px solid black;
+    background-color: #ffffff;
+}
+.f-links{
+         color: blue;
+}
+.pl{
+  color:white;  
+}
+.ph3{
+    text-align: center;
+}
+
+section {
+    padding: 60px 20px;   /* spacing around sections */
+    margin-bottom: 40px;
+    background: #fff;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /*
+     remove fixed height */
+}
+.sec1{
+    height: 560px;
+    margin-bottom: 100px;
+}
+.sec4{
+    height: 400px;
+}
+.sec2{
+    height: 300px;
+}
+.sec3{
+    height: 760px;
+    background-color: rgba(177, 147, 147, 0.15);
+}
+.thesame{
+    border-radius: 12px;
+    border:1px solid black;
+    width: 25%;
+    height: 200px;
+}
+
