@@ -1,66 +1,75 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work / Contact</title>
     <link rel="stylesheet" href="mycss.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
         <ol>
-            <li><img src="img/os.png"></li>
-            <li><a href="index.html" class="same">home</a></li>
-            <li><a href="About.html" class="same">About</a></li>
-            <li><a href="Skills.html" class="same">skills</a></li>
-            <li><a href="Services.html" class="same">Services</a></li>
-            <li><a href="Getintouch.html" class="same">contact</a></li>
+            <li><img src="img/os.png" alt="Logo"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Getintouch.html" class="active">Contact</a></li>
             <li><a href="Getintouch.html" id="touch">Get In Touch</a></li>
         </ol>
     </nav>
-    <section class="sec1">
 
-<h6 class="abh1" >work</h6>
-    <p class="alignit">I'm always open to discussing new opportunities, interesting projects, or potential
-    collaborations.</p>
-    <div class="container3">
-        <div class="container1">
-            <div class="inner">
-                <div class="icon1"><img src="img/cont.png" ></div>
-                <div class="icone"><p>0787366256</p></div>
+    <!-- Work Section -->
+    <section class="work-section">
+        <h6 class="abh1">Work with us</h6>
+        <p class="alignit">
+            I'm always open to discussing new opportunities, interesting projects, or potential collaborations.
+        </p>
+
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="info-item">
+                    <img src="img/cont.png" alt="Phone" class="icon-img">
+                    <p>0787366256</p>
+                </div>
+                <div class="info-item">
+                    <img src="img/email.png" alt="Email" class="icon-img">
+                    <p>Email:<br>mugishaoscar81@gmail.com</p>
+                </div>
+
+                <h3 class="why-work">Why work with me</h3>
+                <ul class="why-list">
+                    <li>Dedicated to delivering high-quality solutions.</li>
+                    <li>Strong communication and collaboration skills.</li>
+                    <li>Always learning and adapting to new technologies.</li>
+                </ul>
+
+                <div class="social-icons">
+                    <a href="https://github.com/"><img src="img/git.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/"><img src="img/linked.png" alt="LinkedIn"></a>
+                    <a href="https://mail.google.com"><img src="img/email.png" alt="Email"></a>
+                </div>
             </div>
-            <div class="inner">
-                <div class="icon1"><img src="img/email.png" ></div>
-                <div class="icone"><p>Email:<br>mugishaoscar81@gmail.com</p></div>
-            </div>
-            <h3 class="aligni">Why work with me</h3>
-            <div>
-            <ul >
-                <li class="alig">Dedicated to delivering high-quality solutions.</li>
-                <br>
-                <li class="alig">Strong communication and collaboration skills.</li>
-                <br>
-                <li class="alig">Always learning and adapting to new technologies.</li>
-            </ul>
-            
-            </div>
-            <div class="conta">
-                <div class="icon" ><a href="https://github.com/"><img src="img/git.png"></a></div>
-                <div class="icon" ><a href="https://www.linkedin.com/"><img src="img/linked.png"></a></div>
-                <div class="icon" ><a href="https://mail.google.com"><img src="img/email.png"></a></div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send me a message</h3>
+                <form>
+                    <label>Name</label>
+                    <input type="text" placeholder="Your Name">
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Your Email">
+
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+
+                    <button type="submit" id="send">Send</button>
+                </form>
             </div>
         </div>
-        <div class="left">
-            <h3>Send me a message</h3>
-            <form>
-                <label>Name</label><br>
-                <input type="text" placeholder="your name" class="leftl"><br>
-                <label>Email</label><br>
-                <input type="text" placeholder="your name" class="leftl"><br>
-                <label >Message</label><br>
-                <textarea id="w3review" name="w3review" rows="4" cols="50" class="leftl"></textarea>
-                <input type="submit" value="Send" id="send">
-            </form>
-        </div>
-    </div>
     </section>
 </body>
 </html>

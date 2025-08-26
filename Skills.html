@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Page Title</title>
-        <link rel="stylesheet" href="mycss.css">
-    </head>
+<head>
+    <title>Skills</title>
+    <link rel="stylesheet" href="mycss.css">
+</head>
 <body>
+    <!-- Navigation (same across all pages) -->
     <nav>
         <ol>
-            <li><img src="img/os.png"></li>
-            <li><a href="index.html" class="same">home</a></li>
+            <li><img src="img/os.png" alt="Logo"></li>
+            <li><a href="index.html" class="same">Home</a></li>
             <li><a href="About.html" class="same">About</a></li>
-            <li><a href="Skills.html" class="same">skills</a></li>
+            <li><a href="Skills.html" class="same active">Skills</a></li>
             <li><a href="Services.html" class="same">Services</a></li>
-            <li><a href="Getintouch.html" class="same">contact</a></li>
+            <li><a href="Getintouch.html" class="same">Contact</a></li>
             <li><a href="Getintouch.html" id="touch">Get In Touch</a></li>
         </ol>
     </nav>
-<section class="sec2">
-    <p class="abh1">skills</p>
-    <h1 class="skllsh">Tools i work with</h1>
-    <p class="alignit">I'm constantly learning and adapting to new technologies to deliver the best solutions for
-    every project.</p>
-    <div class="container">
-        <div class="tech">
-            <h6>Iot & Embeded system</h6>
-            <div class="tec">Arduino</div>
-            <div class="tec">sensor</div>
-            <div class="tec">actuator</div>
-        </div>
-        <div class="tech">
-            <h6>Frontend</h6>
-            <div class="tec">javascript</div>
-            <div class="tec">Css</div>
-            <div  class="tec">Html</div>
-        </div>
-        <div class="tech">
-            <h6>Tools and others</h6>
-            <div class="tec">figma</div>
-            <div class="tec">git</div>
-            <div class="tec">github</div>
-        </div>
-    </div>
-    </section>  
 
+    <!-- Skills Section -->
+    <section class="sec2">
+        <p class="abh1">My Skills</p>
+        <h1 class="skllsh">Tools & Technologies I Work With</h1>
+        <p class="alignit">
+            I’m constantly learning and adapting to new technologies to deliver the best solutions 
+            for every project.
+        </p>
+
+        <div class="skills-grid">
+            <!-- IoT & Embedded -->
+            <div class="skill-card">
+                <h3>IoT & Embedded Systems</h3>
+                <ul>
+                    <li>Arduino</li>
+                    <li>Sensors</li>
+                    <li>Actuators</li>
+                </ul>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-card">
+                <h3>Frontend Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-card">
+                <h3>Tools & Others</h3>
+                <ul>
+                    <li>Figma</li>
+                    <li>Git & GitHub</li>
+                    <li>Version Control</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

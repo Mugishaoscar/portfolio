@@ -1,32 +1,64 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="mycss.css">
-        <title>featured project</title>
-    </head>
+<head>
+    <link rel="stylesheet" href="mycss.css">
+    <title>Featured Projects</title>
+</head>
 <body>
+    <!-- Navigation -->
     <nav>
         <ol>
-            <li><img src="img/os.png"></li>
-            <li><a href="index.html" class="same">home</a></li>
+            <li><img src="img/os.png" alt="Logo"></li>
+            <li><a href="index.html" class="same">Home</a></li>
             <li><a href="About.html" class="same">About</a></li>
-            <li><a href="Skills.html" class="same">skills</a></li>
+            <li><a href="Skills.html" class="same">Skills</a></li>
             <li><a href="Services.html" class="same">Services</a></li>
-            <li><a href="Getintouch.html" class="same">contact</a></li>
+            <li><a href="Getintouch.html" class="same">Contact</a></li>
             <li><a href="Getintouch.html" id="touch">Get In Touch</a></li>
         </ol>
     </nav>
-    <p class="abh1"></p>
-    <div class="containera">
-        <div class="tech">
-            <a href="img/vid1.mp4"><div ><img src="img/img1.jpeg" width="200" height="100" ></div>
-            <h3 class="ph3">Security system</h3>
-            <p class="ph3"> this is used to protect your home</p></a>
+
+    <!-- Section Title -->
+    <section class="sec2">
+        <p class="abh1">Featured Projects</p>
+        <h1 class="skllsh">Some of My Recent Work</h1>
+        <p class="alignit">
+            Here are a few of my highlighted projects. Click on them to explore more.
+        </p>
+    </section>
+
+    <!-- Project Grid -->
+    <div class="projects-grid">
+        <div class="project-card">
+            <a href="img/vid1.mp4">
+                <div class="img-wrapper">
+                    <img src="img/img1.jpeg" alt="Security System">
+                    <span class="play-btn">&#9658;</span>
+                </div>
+                <div class="project-info">
+                    <h3>Security System</h3>
+                    <p>This is used to protect your home</p>
+                </div>
+            </a>
         </div>
-        <div class="tech">
-            <a href="img/vid2.mp4"><div ><img src="img/img1.jpeg" width="200" height="100" ></div>
-            <h3 class="ph3">Remote control</h3>
-            <p class="ph3"> this is used to control a robot car</p></a>
+
+        <div class="project-card">
+            <a href="img/vid2.mp4">
+                <div class="img-wrapper">
+                    <img src="img/img1.jpeg" alt="Remote Control">
+                    <span class="play-btn">&#9658;</span>
+                </div>
+                <div class="project-info">
+                    <h3>Remote Control</h3>
+                    <p>This is used to control a robot car</p>
+                </div>
+            </a>
         </div>
+    </div>
+
+    <!-- View More Button -->
+    <div class="view-more">
+        <a href="AllProjects.html" class="btn">View All Projects</a>
     </div>
 </body>
 </html>
