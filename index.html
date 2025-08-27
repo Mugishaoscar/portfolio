@@ -12,12 +12,12 @@
     <ol>
       <li><img src="img/os.png" alt="Logo"></li>
       <li><a href="index.html" class="same active">Home</a></li>
-      <li><a href="About.html" class="same">About</a></li>
-      <li><a href="Skills.html" class="same">Skills</a></li>
-      <li><a href="Services.html" class="same">Services</a></li>
-      <li><a href="Poject.html" class="same">Projects</a></li>
-      <li><a href="Getintouch.html" class="same">Contact</a></li>
-      <li><a href="Getintouch.html" id="touch">Get In Touch</a></li>
+      <li><a href="#about-header" class="same">About</a></li>
+      <li><a href="#sec" class="same">Skills</a></li>
+      <li><a href="#sec3" class="same">Services</a></li>
+      <li><a href="#sec2" class="same">Projects</a></li>
+      <li><a href="#work-section" class="same">Contact</a></li>
+      <li><a href="#work-section" id="touch">Get In Touch</a></li>
     </ol>
   </nav>
 
@@ -38,7 +38,7 @@
   </header>
 
   <!-- Intro Section -->
-  <section class="intro">
+  <section id="intro">
     <h2 id="why">What I Do</h2>
     <p>
       I specialize in creating responsive websites, user-friendly applications, 
@@ -46,26 +46,215 @@
       I love turning ideas into reality.
     </p>
   </section>
+  <!-- About Section -->
+    <section id="about-header">
+        <p class="abh1">About Me</p>
+        <h1 class="alignit">Passionate about solving problems through digital solutions</h1>
+        <p class="alignit">
+            Skilled in web development, IoT, and embedded systems with a passion for creating functional and beautiful applications that deliver exceptional user experiences.
+        </p>
+    </section>
 
+    <!-- Skills & Bio -->
+    <section class="about-content container">
+        <div class="bio">
+            <p>
+                I am a Year 2 student at College of Science and Technology, skilled in HTML, CSS, and JavaScript. I believe in writing clean, maintainable code while staying updated with industry trends.
+            </p>
+            <p>
+                Outside coding, I explore new technologies, contribute to open-source projects, and share knowledge through blogs and mentoring.
+            </p>
+
+            <div class="skills-tags">
+                <div class="btna">Problem Solver</div>
+                <div class="btna">Continuous Learner</div>
+                <div class="btna">Detail-Oriented</div>
+            </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="achievements">
+            <div class="offer">
+                <p>+1 Completed Project</p>
+            </div>
+            <div class="offer">
+                <p>+10 Happy Clients</p>
+            </div>
+        </div>
+
+    </section>
+  
+    <section id="sec">
+        <p class="abh1">My Skills</p>
+        <h1 class="skllsh">Tools & Technologies I Work With</h1>
+        <p class="alignit">
+            I’m constantly learning and adapting to new technologies to deliver the best solutions 
+            for every project.
+        </p>
+
+        <div class="skills-grid">
+            <!-- IoT & Embedded -->
+            <div class="skill-card">
+                <h3>IoT & Embedded Systems</h3>
+                <ul>
+                    <li>Arduino</li>
+                    <li>Sensors</li>
+                    <li>Actuators</li>
+                </ul>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skill-card">
+                <h3>Frontend Development</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <!-- Tools -->
+            <div class="skill-card">
+                <h3>Tools & Others</h3>
+                <ul>
+                    <li>Figma</li>
+                    <li>Git & GitHub</li>
+                    <li>Version Control</li>
+                </ul>
+            </div>
+        </div>
+    </section>
   <!-- Featured Section -->
-  <section class="featured">
-    <h2>Featured Work</h2>
-    <p>Here are a few projects I’m proud of:</p>
-    <div class="featured-grid">
-      <div class="card">
-        <img src="img/img1.jpeg" alt="Security System">
-        <h3>Security System</h3>
-        <p>Protect your home with smart automation.</p>
-        <a href="Poject.html" class="link">Learn More →</a>
-      </div>
-      <div class="card">
-        <img src="img/img1.jpeg" alt="Remote Control">
-        <h3>Remote Control Car</h3>
-        <p>Control robot cars with IoT remote solutions.</p>
-        <a href="Poject.html" class="link">Learn More →</a>
-      </div>
+  <section id="sec2">
+        <p class="abh1">Featured Projects</p>
+        <h1 class="skllsh">Some of My Recent Work</h1>
+        <p class="alignit">
+            Here are a few of my highlighted projects. Click on them to explore more.
+        </p>
+    </section>
+
+    <!-- Project Grid -->
+    <div class="projects-grid">
+        <div class="project-card">
+            <a href="img/vid1.mp4">
+                <div class="img-wrapper">
+                    <img src="img/img1.jpeg" alt="Security System">
+                    <span class="play-btn">&#9658;</span>
+                </div>
+                <div class="project-info">
+                    <h3>Security System</h3>
+                    <p>This is used to protect your home</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="project-card">
+            <a href="img/vid2.mp4">
+                <div class="img-wrapper">
+                    <img src="img/img1.jpeg" alt="Remote Control">
+                    <span class="play-btn">&#9658;</span>
+                </div>
+                <div class="project-info">
+                    <h3>Remote Control</h3>
+                    <p>This is used to control a robot car</p>
+                </div>
+            </a>
+        </div>
     </div>
-  </section>
+  
+      <section id="sec3">
+        <p class="alignit">
+            Oscar Solutions Ltd offers different services to its clients. The following are some of them:
+        </p>
+
+        <div class="services-panel">
+            <div class="services">
+                <h2>UR Application</h2>
+                <p>Fill this <a href="https://forms.gle/SvSPPWq5mnGbrUu46">form</a> if you want help in application or 
+                <a href="Getintouch.html">contact us</a>.</p>
+                <button class="btn">More Info</button>
+            </div>
+
+            <div class="services">
+                <h2>IoT Related Projects</h2>
+                <p>We can help you develop IoT projects.</p>
+                <button class="btn">More Info</button>
+            </div>
+
+            <div class="services">
+                <h2>PC Maintenance</h2>
+                <p>We repair and sell electronic hardware.</p>
+                <button class="btn">More Info</button>
+            </div>
+
+            <div class="services">
+                <h2>Irembo Services</h2>
+                <p>All Irembo services are included here.</p>
+                <a href="about.html"><button class="btn">More Info</button></a>
+            </div>
+
+            <div class="services">
+                <h2>Web Development Services</h2>
+                <p>We can develop a website for your company.</p>
+                <button class="btn">More Info</button>
+            </div>
+        </div>
+    </section>  
+    <!-- View More Button -->
+    <div class="view-more">
+        <a href="AllProjects.html" class="btn">View All Projects</a>
+    </div>
+
+  <section id="work-section">
+        <h6 class="abh1">Work with us</h6>
+        <p class="alignit">
+            I'm always open to discussing new opportunities, interesting projects, or potential collaborations.
+        </p>
+
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="info-item">
+                    <img src="img/cont.png" alt="Phone" class="icon-img">
+                    <p>0787366256</p>
+                </div>
+                <div class="info-item">
+                    <img src="img/email.png" alt="Email" class="icon-img">
+                    <p>Email:<br>mugishaoscar81@gmail.com</p>
+                </div>
+
+                <h3 class="why-work">Why work with me</h3>
+                <ul class="why-list">
+                    <li>Dedicated to delivering high-quality solutions.</li>
+                    <li>Strong communication and collaboration skills.</li>
+                    <li>Always learning and adapting to new technologies.</li>
+                </ul>
+
+                <div class="social-icons">
+                    <a href="https://github.com/"><img src="img/git.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/"><img src="img/linked.png" alt="LinkedIn"></a>
+                    <a href="https://mail.google.com"><img src="img/email.png" alt="Email"></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send me a message</h3>
+                <form>
+                    <label class="label1">Name</label>
+                    <input type="text" placeholder="Your Name">
+
+                    <label class="label1">Email</label>
+                    <input type="email" placeholder="Your Email">
+
+                    <label class="label1">Message</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+
+                    <button type="submit" id="send">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>  
   <footer>
         <div class="div-footer">
             <h3>Mugisha Oscar<br><small>Software Developer & Designer</small></h3>

@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+   scroll-behavior: smooth;
+}
+
 /* Body */
 body {
     font-family: Arial, sans-serif;
@@ -142,13 +146,13 @@ nav a.active {
 }
 
 /* Intro Section */
-.intro {
+#intro {
   text-align: center;
   padding: 60px 10%;
   background-color: gainsboro;
 }
 
-.intro h2 {
+#intro h2 {
   font-size: 32px;
   margin-bottom: 15px;
 }
@@ -201,7 +205,7 @@ nav a.active {
 }
 
 /* Header Section */
-.about-header {
+#about-header {
     text-align: center;
     padding: 50px 20px 30px 20px;
 }
