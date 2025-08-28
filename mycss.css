@@ -30,6 +30,59 @@ nav {
     z-index: 100;
 }
 
+ /* Nav links (desktop) */
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+    }
+
+    /* Hamburger button (hidden by default) */
+    .hamburger {
+      display: none;
+      font-size: 1.5rem;
+      background: black;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block; /* show hamburger */
+      }
+
+      .nav-links {
+        display: none; /* hide links initially */
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+        background: #1e293b;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      .nav-links.show {
+        display: flex; /* show links when toggled */
+      }
+
+      #touch {
+        margin-right: 0px; /* reset fixed margin */
+      }
+    }
+.nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 nav ol {
     list-style: none;
     display: flex;

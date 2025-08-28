@@ -9,15 +9,18 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <ol>
-            <li><img src="img/os.png" alt="Logo"></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Skills.html">Skills</a></li>
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="Getintouch.html" class="active">Contact</a></li>
-            <li><a href="Getintouch.html" id="touch">Get In Touch</a></li>
-        </ol>
+        <div class="nav-container">
+            <button class="hamburger" id="hamburger">☰</button>
+            <ol class="nav-links" id="navLinks">
+                <li><img src="img/os.png" alt="Logo"></li>
+                <li><a href="index.html" class="same">Home</a></li>
+                <li><a href="About.html" class="same">About</a></li>
+                <li><a href="Skills.html" class="same active">Skills</a></li>
+                <li><a href="Services.html" class="same">Services</a></li>
+                <li><a href="Getintouch.html" class="same">Contact</a></li>
+                <li><a href="Getintouch.html" id="touch">Get In Touch</a></li>
+            </ol>
+        </div>
     </nav>
 
     <!-- Work Section -->
@@ -71,5 +74,14 @@
             </div>
         </div>
     </section>
+        <script>
+    // Toggle mobile menu
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+
+        hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+        });
+    </script>
 </body>
 </html>

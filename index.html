@@ -8,18 +8,20 @@
 </head>
 <body>
   <!-- Navigation -->
-  <nav>
-    <ol>
-      <li><img src="img/os.png" alt="Logo"></li>
-      <li><a href="index.html" class="same active">Home</a></li>
-      <li><a href="#about-header" class="same">About</a></li>
-      <li><a href="#sec" class="same">Skills</a></li>
-      <li><a href="#sec3" class="same">Services</a></li>
-      <li><a href="#sec2" class="same">Projects</a></li>
-      <li><a href="#work-section" class="same">Contact</a></li>
-      <li><a href="#work-section" id="touch">Get In Touch</a></li>
-    </ol>
-  </nav>
+    <nav>
+        <div class="nav-container">
+            <button class="hamburger" id="hamburger">☰</button>
+            <ol class="nav-links" id="navLinks">
+                <li><img src="img/os.png" alt="Logo"></li>
+                <li><a href="index.html" class="same">Home</a></li>
+                <li><a href="About.html" class="same">About</a></li>
+                <li><a href="Skills.html" class="same active">Skills</a></li>
+                <li><a href="Services.html" class="same">Services</a></li>
+                <li><a href="Getintouch.html" class="same">Contact</a></li>
+                <li><a href="Getintouch.html" id="touch">Get In Touch</a></li>
+            </ol>
+        </div>
+    </nav>
 
   <!-- Hero Section -->
   <header class="hero">
@@ -255,7 +257,7 @@
             </div>
         </div>
     </section>  
-  <footer>
+    <footer>
         <div class="div-footer">
             <h3>Mugisha Oscar<br><small>Software Developer & Designer</small></h3>
             <div class="icon"><a href="https://github.com/"><img src="img/git.png" alt="GitHub"></a></div>
@@ -264,5 +266,14 @@
         </div>
         <div id="last">Oscar Solutions &copy; Ltd</div>
     </footer>
+    <script>
+    // Toggle mobile menu
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+
+        hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+        });
+    </script>
 </body>
 </html>
