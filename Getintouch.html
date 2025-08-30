@@ -59,15 +59,15 @@
             <!-- Contact Form -->
             <div class="contact-form">
                 <h3>Send me a message</h3>
-                <form>
-                    <label class="label1">Name</label>
-                    <input type="text" placeholder="Your Name">
+                <form id="ourform">
+                    <label class="label1" >Name</label>
+                    <input type="text" placeholder="Your Name" id="name">
 
                     <label class="label1">Email</label>
-                    <input type="email" placeholder="Your Email">
+                    <input type="email" placeholder="Your Email" id="email">
 
                     <label class="label1">Message</label>
-                    <textarea rows="5" placeholder="Your Message"></textarea>
+                    <textarea rows="5" placeholder="Your Message" id="message"></textarea>
 
                     <button type="submit" id="send">Send</button>
                 </form>
@@ -75,13 +75,31 @@
         </div>
     </section>
         <script>
-    // Toggle mobile menu
-        const hamburger = document.getElementById("hamburger");
-        const navLinks = document.getElementById("navLinks");
 
-        hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
-        });
-    </script>
+            // Toggle mobile menu
+            const hamburger = document.getElementById("hamburger");
+            const navLinks = document.getElementById("navLinks");
+             
+            hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+            });
+            document.getElementById("ourform").addEventListener("submit", function(event){
+            let name=document.getElementById("name").value.trim();
+            let email=document.getElementById("email").value.trim();
+            let message=document.getElementById("message").value.trim();
+
+            if(name === ""){
+                alert("name required");
+                event.preventDefault();
+            } else if(email===""){
+                alert("email required");
+                event.preventDefault();
+            } else if(message===""){
+                alert("message required");
+                event.preventDefault();
+            }
+            });
+        
+       </script>
 </body>
 </html>

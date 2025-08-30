@@ -242,18 +242,18 @@
             <!-- Contact Form -->
             <div class="contact-form">
                 <h3>Send me a message</h3>
-                <form>
-                    <label class="label1">Name</label>
-                    <input type="text" placeholder="Your Name">
+               <form id="myform">
+  <label class="label1">Name</label>
+  <input type="text" placeholder="Your Name" id="username">
 
-                    <label class="label1">Email</label>
-                    <input type="email" placeholder="Your Email">
+  <label class="label1">Email</label>
+  <input type="email" placeholder="Your Email" id="email">
 
-                    <label class="label1">Message</label>
-                    <textarea rows="5" placeholder="Your Message"></textarea>
+  <label class="label1">Message</label>
+  <textarea rows="5" placeholder="Your Message" id="message"></textarea>
 
-                    <button type="submit" id="send">Send</button>
-                </form>
+  <button type="submit" id="send">Send</button>
+</form>
             </div>
         </div>
     </section>  
@@ -266,14 +266,38 @@
         </div>
         <div id="last">Oscar Solutions &copy; Ltd</div>
     </footer>
-    <script>
-    // Toggle mobile menu
-        const hamburger = document.getElementById("hamburger");
-        const navLinks = document.getElementById("navLinks");
+<script>
+  // Toggle mobile menu
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
 
-        hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("show");
-        });
-    </script>
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+
+  // ✅ Correct form validation
+  document.getElementById("myform").addEventListener("submit", function(event){
+    let username = document.getElementById("username").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    // Simple email pattern check
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (username === "") {
+      alert("Name is required");
+      event.preventDefault();
+    }
+    else if (!emailPattern.test(email)) {
+      alert("Please enter a valid email address");
+      event.preventDefault();
+    }
+    else if (message === "") {
+      alert("Message cannot be empty");
+      event.preventDefault();
+    }
+  });
+</script>
+
 </body>
 </html>

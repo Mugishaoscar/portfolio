@@ -64,29 +64,31 @@ nav {
         display: none; /* hide links initially */
         flex-direction: column;
         gap: 15px;
-        margin-top: 10px;
+        margin-top: 0px;
         background: #1e293b;
-        padding: 15px;
+        margin:auto;
+        padding:0px;
         border-radius: 8px;
+        width: 260px;
       }
 
       .nav-links.show {
-        display: flex; /* show links when toggled */
+        display: block; /* show links when toggled */
       }
 
       #touch {
-        margin-right: 0px; /* reset fixed margin */
+        margin-right: 10px; /* reset fixed margin */
       }
     }
 .nav-container {
-      display: flex;
+      display:block;
       align-items: center;
       justify-content: space-between;
     }
 nav ol {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 2px;
     align-items: center;
 }
 
@@ -96,7 +98,7 @@ nav ol li img {
 }
 
 nav a {
-    text-decoration: none;
+    text-decoration;
     color: #333;
     font-weight: bold;
     transition: color 0.3s;
